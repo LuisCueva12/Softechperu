@@ -1,0 +1,271 @@
+---
+// src/pages/nosotros.astro
+import Layout from "../layouts/Layout.astro"; // Asumiendo un layout base
+---
+
+<Layout title="Nosotros - Softechperu">
+    <!-- Hero Section de Nosotros (Fondo oscuro) -->
+    <section
+        class="w-full bg-neutral-950 text-white pt-24 sm:pt-28 md:pt-32 lg:pt-36 pb-16 sm:pb-20 md:pb-24 lg:pb-28 relative overflow-hidden"
+    >
+        <div
+            class="absolute inset-0 bg-gradient-to-tr from-teal-900 via-blue-950 to-violet-900 opacity-95"
+        >
+        </div>
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center"
+        >
+            <h1
+                class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black leading-tight tracking-tight text-white drop-shadow-lg"
+            >
+                ¿Quiénes <span
+                    class="bg-clip-text text-transparent bg-gradient-to-r from-teal-300 to-violet-300"
+                    >Somos?</span
+                >
+            </h1>
+            <p
+                class="mt-4 text-sm sm:text-base md:text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed"
+            >
+                Somos Softechperu, una empresa emergente apasionada por
+                transformar ideas en soluciones digitales innovadoras.
+            </p>
+        </div>
+    </section>
+
+    <!-- Nuestra Historia (Fondo blanco) -->
+    <section class="w-full py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2
+                class="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-neutral-900 mb-8 sm:mb-12"
+            >
+                Nuestra Historia
+            </h2>
+            <div class="flex flex-col lg:flex-row items-center gap-8">
+                <div class="lg:w-1/2">
+                    <p
+                        class="text-sm sm:text-base text-gray-700 leading-relaxed"
+                    >
+                        Fundada en 2024, Softechperu nació con una idea clara:
+                        democratizar el acceso a la tecnología de punta para
+                        negocios de todos los tamaños. Somos un equipo joven,
+                        pero con una visión ambiciosa: combinar creatividad y
+                        experiencia técnica para ofrecer soluciones digitales
+                        que no solo cumplan expectativas, sino que las superen.
+                        Desde nuestros inicios, hemos trabajado con pasión para
+                        convertirnos en aliados estratégicos de emprendedores y
+                        empresas que buscan destacar en el mundo digital.
+                    </p>
+                </div>
+                <div class="lg:w-1/2">
+                    <div
+                        class="bg-gradient-to-br from-teal-100 to-violet-100 p-4 rounded-2xl shadow-lg"
+                    >
+                        <img
+                            src="/images/equipo.png"
+                            alt="Nuestra Historia"
+                            class="w-full h-auto rounded-xl"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Misión y Visión (Fondo oscuro) -->
+    <section
+        class="w-full py-12 bg-neutral-950 text-white relative overflow-hidden"
+    >
+        <div
+            class="absolute inset-0 bg-gradient-to-tr from-teal-900 via-blue-950 to-violet-900 opacity-95"
+        >
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <h2
+                class="text-2xl sm:text-3xl md:text-4xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-teal-300 to-violet-300 mb-8 sm:mb-12"
+            >
+                Nuestra Esencia
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+                <!-- Misión -->
+                <div
+                    class="bg-white/10 p-6 rounded-2xl backdrop-blur-md border border-teal-500/20"
+                >
+                    <div class="flex items-center gap-4">
+                        <svg
+                            class="w-12 h-12 text-teal-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                        <h3 class="text-lg sm:text-xl font-semibold text-white">
+                            Misión
+                        </h3>
+                    </div>
+                    <p
+                        class="mt-3 text-sm sm:text-base text-gray-300 leading-relaxed"
+                    >
+                        Impulsar el éxito de nuestros clientes mediante
+                        soluciones tecnológicas innovadoras, personalizadas y
+                        accesibles, diseñadas para resolver sus desafíos y
+                        potenciar su crecimiento en un mundo digital en
+                        constante evolución.
+                    </p>
+                </div>
+
+                <!-- Visión -->
+                <div
+                    class="bg-white/10 p-6 rounded-2xl backdrop-blur-md border border-teal-500/20"
+                >
+                    <div class="flex items-center gap-4">
+                        <svg
+                            class="w-12 h-12 text-teal-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M15 12a3 3 0 11-6 0 3 3 0 016 0zM2 12h20"
+                            ></path>
+                        </svg>
+                        <h3 class="text-lg sm:text-xl font-semibold text-white">
+                            Visión
+                        </h3>
+                    </div>
+                    <p
+                        class="mt-3 text-sm sm:text-base text-gray-300 leading-relaxed"
+                    >
+                        Ser líderes en el desarrollo de tecnología digital en
+                        Perú y más allá, reconocidos por nuestra creatividad,
+                        calidad y compromiso con el éxito de nuestros clientes,
+                        mientras inspiramos una nueva generación de innovadores.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nuestro Equipo (Fondo blanco) -->
+    <section class="w-full py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2
+                class="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-neutral-900 mb-8 sm:mb-12"
+            >
+                Nuestro Equipo
+            </h2>
+            <div
+                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8"
+            >
+                <!-- Miembro 1 -->
+                <div class="text-center">
+                    <div
+                        class="bg-gradient-to-br from-teal-100 to-violet-100 p-2 rounded-full w-32 h-32 mx-auto"
+                    >
+                        <img
+                            src="/images/luis.png"
+                            alt="Miembro 1"
+                            class="w-full h-full rounded-full object-cover"
+                        />
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold text-teal-900">
+                        Luis
+                    </h3>
+                    <p class="text-sm text-gray-700">Desarrollador Principal</p>
+                </div>
+
+                <!-- Miembro 2 -->
+                <div class="text-center">
+                    <div
+                        class="bg-gradient-to-br from-teal-100 to-violet-100 p-2 rounded-full w-32 h-32 mx-auto"
+                    >
+                        <img
+                            src="/images/team-member2.png"
+                            alt="Miembro 2"
+                            class="w-full h-full rounded-full object-cover"
+                        />
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold text-teal-900">
+                        Sofía
+                    </h3>
+                    <p class="text-sm text-gray-700">Diseñadora UI/UX</p>
+                </div>
+
+                <!-- Miembro 3 -->
+                <div class="text-center">
+                    <div
+                        class="bg-gradient-to-br from-teal-100 to-violet-100 p-2 rounded-full w-32 h-32 mx-auto"
+                    >
+                        <img
+                            src="/images/team-member3.png"
+                            alt="Miembro 3"
+                            class="w-full h-full rounded-full object-cover"
+                        />
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold text-teal-900">
+                        Carlos
+                    </h3>
+                    <p class="text-sm text-gray-700">Especialista SEO</p>
+                </div>
+
+                <!-- Miembro 4 -->
+                <div class="text-center">
+                    <div
+                        class="bg-gradient-to-br from-teal-100 to-violet-100 p-2 rounded-full w-32 h-32 mx-auto"
+                    >
+                        <img
+                            src="/images/team-member4.png"
+                            alt="Miembro 4"
+                            class="w-full h-full rounded-full object-cover"
+                        />
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold text-teal-900">
+                        Ana
+                    </h3>
+                    <p class="text-sm text-gray-700">Gestora de Proyectos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final (Fondo oscuro) -->
+    <section
+        id="contacto"
+        class="w-full py-12 bg-neutral-950 text-white relative overflow-hidden"
+    >
+        <div
+            class="absolute inset-0 bg-gradient-to-tr from-teal-900 via-blue-950 to-violet-900 opacity-95"
+        >
+        </div>
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center"
+        >
+            <h2
+                class="text-2xl sm:text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-teal-300 to-violet-300 mb-4"
+            >
+                ¿Listos para trabajar juntos?
+            </h2>
+            <p
+                class="text-sm sm:text-base md:text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed mb-8"
+            >
+                Somos un equipo joven y dinámico listo para hacer realidad tus
+                ideas.
+            </p>
+            <a
+                href="/contacto"
+                class="inline-block px-6 py-2 sm:px-8 sm:py-3 bg-gradient-to-r from-teal-600 to-violet-600 text-white text-sm sm:text-base font-semibold rounded-full hover:from-teal-700 hover:to-violet-700 transition-all duration-300 shadow-lg hover:shadow-teal-500/50"
+            >
+            Contáctanos
+            </a>
+        </div>
+    </section>
+</Layout>

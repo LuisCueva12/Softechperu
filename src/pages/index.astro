@@ -3,25 +3,44 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
+	<!-- HERO SECTIÓN -->
 	<section
-		class="w-full bg-white text-gray-900 py-12 md:py-16 lg:py-20 relative overflow-hidden"
+		class="w-full bg-neutral-950 text-white pt-24 sm:pt-28 md:pt-32 lg:pt-36 pb-16 sm:pb-20 md:pb-24 lg:pb-28 relative overflow-hidden"
 	>
+		<!-- Fondo dinámico con gradiente animado y formas geométricas -->
 		<div
-			class="absolute inset-0 bg-gradient-to-br from-emerald-50 via-white to-blue-50 opacity-70"
+			class="absolute inset-0 bg-gradient-to-tr from-teal-900 via-blue-950 to-violet-900 opacity-95 animate-gradient"
 		>
+			<!-- Líneas y formas geométricas modernas -->
+			<div
+				class="absolute inset-0 bg-[linear-gradient(45deg,rgba(45,212,191,0.1)_1px,transparent_1px,transparent_10px),linear-gradient(-45deg,rgba(139,92,246,0.1)_1px,transparent_1px,transparent_10px)] bg-[size:20px_20px] animate-gradient-lines"
+			>
+			</div>
+			<div
+				class="absolute w-40 h-40 sm:w-56 sm:h-56 md:w-72 md:h-72 lg:w-96 lg:h-96 bg-teal-500/20 rounded-full blur-3xl top-1/4 left-1/4 animate-pulse-slow"
+			>
+			</div>
+			<div
+				class="absolute w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 bg-violet-500/20 rounded-full blur-3xl bottom-1/3 right-1/3 animate-pulse-slow"
+			>
+			</div>
 		</div>
 
+		<!-- Contenedor principal -->
 		<div
-			class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col md:flex-row items-center gap-8 md:gap-12"
+			class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col lg:flex-row items-center gap-8 sm:gap-10 lg:gap-12"
 		>
-			<!-- Texto e Información -->
-			<div class="w-full md:w-1/2 space-y-6 animate-fade-in-left">
+			<!-- Texto principal -->
+			<div
+				class="w-full lg:w-1/2 space-y-6 sm:space-y-8 animate-fade-in-down"
+			>
+				<!-- Etiqueta decorativa con palabra clave SEO -->
 				<div
-					class="inline-block p-2 bg-emerald-100 rounded-lg text-emerald-600 mb-4"
+					class="inline-flex items-center px-3 py-1 sm:px-4 sm:py-2 bg-teal-600/30 text-teal-100 rounded-full text-[0.65rem] sm:text-xs md:text-sm font-medium tracking-wider uppercase shadow-md"
 				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
-						class="h-6 w-6 sm:h-8 sm:w-8"
+						class="h-4 w-4 sm:h-5 sm:w-5 mr-1 sm:mr-2"
 						fill="none"
 						viewBox="0 0 24 24"
 						stroke="currentColor"
@@ -30,127 +49,68 @@ import Layout from "../layouts/Layout.astro";
 							stroke-linecap="round"
 							stroke-linejoin="round"
 							stroke-width="2"
-							d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
-						></path>
+							d="M13 10V3L4 14h7v7l9-11h-7z"></path>
 					</svg>
+					Desarrollo Web Innovador
 				</div>
 
+				<!-- Título principal con palabras clave SEO -->
 				<h1
-					class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-wide"
+					class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black leading-tight tracking-tight text-white drop-shadow-lg"
 				>
-					Impulsa tu Negocio con Tecnología Inteligente
+					Soluciones Digitales para el
+					<span
+						class="bg-clip-text text-transparent bg-gradient-to-r from-teal-300 to-violet-300"
+						>Futuro de tu Negocio</span
+					>
 				</h1>
 
+				<!-- Descripción con palabras clave SEO (letra más pequeña) -->
 				<p
-					class="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 max-w-xl"
+					class="text-[0.65rem] sm:text-xs md:text-sm lg:text-base xl:text-lg text-blue-50 max-w-lg leading-relaxed drop-shadow-md"
 				>
-					Combinamos innovación y eficiencia para brindarte soluciones
-					digitales de alto impacto. Nos especializamos en desarrollo
-					de software personalizado para empresas visionarias.
+					En <strong>Softechperu</strong>, ofrecemos <strong
+						>tecnología innovadora</strong
+					> y <strong>desarrollo web</strong> a medida para impulsar tu
+					éxito. Nuestras <strong>soluciones digitales</strong>, desde <strong
+						>desarrollo de software</strong
+					> hasta <strong>consultoría tecnológica</strong>, optimizan
+					tu presencia online.
 				</p>
 
-				<div class="pt-4 space-y-4">
-					<div class="flex items-center">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							class="h-5 w-5 sm:h-6 sm:w-6 text-emerald-500 mr-3"
-							fill="none"
-							viewBox="0 0 24 24"
-							stroke="currentColor"
-						>
-							<path
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								stroke-width="2"
-								d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-							></path>
-						</svg>
-						<p
-							class="text-sm sm:text-base md:text-lg text-gray-700"
-						>
-							Desarrollo a la medida
-						</p>
-					</div>
-					<div class="flex items-center">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							class="h-5 w-5 sm:h-6 sm:w-6 text-emerald-500 mr-3"
-							fill="none"
-							viewBox="0 0 24 24"
-							stroke="currentColor"
-						>
-							<path
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								stroke-width="2"
-								d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
-							></path>
-						</svg>
-						<p
-							class="text-sm sm:text-base md:text-lg text-gray-700"
-						>
-							Seguridad de primer nivel
-						</p>
-					</div>
-					<div class="flex items-center">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							class="h-5 w-5 sm:h-6 sm:w-6 text-emerald-500 mr-3"
-							fill="none"
-							viewBox="0 0 24 24"
-							stroke="currentColor"
-						>
-							<path
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								stroke-width="2"
-								d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-						</svg>
-						<p
-							class="text-sm sm:text-base md:text-lg text-gray-700"
-						>
-							Rendimiento optimizado
-						</p>
-					</div>
-				</div>
-
-				<div class="pt-6 flex flex-col sm:flex-row gap-4">
+				<!-- Botones CTA Ajustados -->
+				<div class="flex flex-col sm:flex-row gap-3 sm:gap-4">
 					<a
 						href="/contacto"
-						class="bg-emerald-600 text-white px-6 py-3 sm:px-8 sm:py-4 text-sm sm:text-lg rounded-lg hover:bg-emerald-700 transition-all duration-300 shadow-md hover:shadow-xl transform hover:translate-y-1 w-full sm:w-auto"
+						class="relative inline-block px-6 sm:px-8 py-2 sm:py-3 bg-teal-600 text-white text-xs sm:text-sm md:text-base font-semibold rounded-full hover:bg-teal-700 transition-all duration-300 shadow-lg hover:shadow-teal-500/50 overflow-hidden group w-full sm:w-auto"
 					>
-						Contáctanos
+						<span
+							class="absolute inset-0 bg-gradient-to-r from-teal-400 to-purple-400 opacity-0 group-hover:opacity-30 transition-opacity duration-300"
+						></span>
+						<span class="relative z-10">Contáctanos</span>
 					</a>
 					<a
 						href="/servicios"
-						class="bg-white text-emerald-600 border-2 border-emerald-600 px-6 py-3 sm:px-8 sm:py-4 text-sm sm:text-lg rounded-lg hover:bg-emerald-50 transition-all duration-300 shadow-sm hover:shadow-md transform hover:translate-y-1 w-full sm:w-auto"
+						class="inline-block px-6 sm:px-8 py-2 sm:py-3 bg-transparent border-2 border-white text-white text-xs sm:text-sm md:text-base font-semibold rounded-full hover:bg-white hover:text-teal-900 transition-all duration-300 shadow-md hover:shadow-purple-500/50 w-full sm:w-auto"
 					>
-						Ver servicios
+						Descubre Nuestros Servicios
 					</a>
 				</div>
 			</div>
 
-			<!-- Imagen o gráfico -->
-			<div class="w-full md:w-1/2 animate-fade-in-right mt-8 md:mt-0">
-				<div class="relative">
-					<div
-						class="absolute -left-4 -top-4 w-12 h-12 sm:w-20 sm:h-20 bg-blue-500 rounded-full opacity-20"
-					>
-					</div>
-					<div
-						class="absolute -right-6 -bottom-6 w-16 h-16 sm:w-32 sm:h-32 bg-emerald-500 rounded-full opacity-20"
-					>
-					</div>
-					<div
-						class="bg-gradient-to-br from-emerald-500 to-blue-600 p-2 sm:p-2 rounded-lg sm:rounded-xl shadow-lg"
-					>
-						<img
-							src="/images/hero-illustration.png"
-							alt="Tecnología Inteligente"
-							class="w-full h-auto rounded-md sm:rounded-lg bg-white"
-							onerror="this.onerror=null; this.src='/api/placeholder/600/400'; this.alt='Ilustración de tecnología'"
-						/>
-					</div>
+			<!-- Espacio para la imagen (más grande aún) -->
+			<div
+				class="w-full lg:w-1/2 flex justify-center items-center mt-8 lg:mt-0 animate-fade-in-up"
+			>
+				<div
+					class="relative bg-gradient-to-br from-teal-600 to-blue-800 p-2 sm:p-3 lg:p-4 rounded-2xl shadow-2xl transform hover:scale-105 transition-all duration-500"
+				>
+					<img
+						src="/images/sistemas-a-medida.png"
+						alt="Soluciones Digitales Innovadoras"
+						class="w-full max-w-[360px] sm:max-w-[400px] md:max-w-[480px] lg:max-w-[560px] h-auto rounded-xl bg-neutral-800"
+						onerror="this.onerror=null; this.src='/api/placeholder/560/560'; this.alt='Ilustración tecnológica'"
+					/>
 				</div>
 			</div>
 		</div>
@@ -158,7 +118,7 @@ import Layout from "../layouts/Layout.astro";
 
 	<!-- Sección Servicios (Fondo oscuro con ondas) -->
 	<section
-		class="w-full bg-gray-900 text-white py-20 relative overflow-hidden"
+		class="w-full bg-white text-gray-900 py-20 relative overflow-hidden"
 	>
 		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 			<div class="text-center mb-16">
@@ -185,15 +145,16 @@ import Layout from "../layouts/Layout.astro";
 				>
 					Nuestros Servicios
 				</h2>
-				<p class="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
+				<p class="mt-4 text-lg text-gray-700 max-w-2xl mx-auto">
 					Ofrecemos soluciones innovadoras para potenciar tu negocio
 					con tecnología de vanguardia.
 				</p>
 			</div>
 
 			<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+				<!-- Servicio 1: Desarrollo Web -->
 				<div
-					class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
+					class="bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
 				>
 					<div class="h-2 bg-blue-500"></div>
 					<div class="p-8">
@@ -215,16 +176,16 @@ import Layout from "../layouts/Layout.astro";
 								></path>
 							</svg>
 						</div>
-						<h3 class="text-2xl font-semibold mb-3">
+						<h3 class="text-2xl font-semibold mb-3 text-gray-900">
 							Desarrollo Web
 						</h3>
-						<p class="text-gray-400">
-							Creamos plataformas web modernas, rápidas y
-							optimizadas para tu negocio con experiencias de
-							usuario excepcionales.
+						<p class="text-gray-700">
+							Diseñamos y desarrollamos plataformas web modernas,
+							rápidas y optimizadas que fortalecen tu presencia
+							digital y mejoran la experiencia de tus clientes.
 						</p>
 						<ul class="mt-4 space-y-2">
-							<li class="flex items-center text-sm text-gray-400">
+							<li class="flex items-center text-sm text-gray-600">
 								<svg
 									class="h-4 w-4 mr-2 text-blue-400"
 									fill="none"
@@ -237,9 +198,9 @@ import Layout from "../layouts/Layout.astro";
 										stroke-width="2"
 										d="M5 13l4 4L19 7"></path>
 								</svg>
-								Sitios web responsive
+								Sitios web responsive para todos los dispositivos
 							</li>
-							<li class="flex items-center text-sm text-gray-400">
+							<li class="flex items-center text-sm text-gray-600">
 								<svg
 									class="h-4 w-4 mr-2 text-blue-400"
 									fill="none"
@@ -252,9 +213,9 @@ import Layout from "../layouts/Layout.astro";
 										stroke-width="2"
 										d="M5 13l4 4L19 7"></path>
 								</svg>
-								Aplicaciones web progresivas
+								Aplicaciones web progresivas para mayor accesibilidad
 							</li>
-							<li class="flex items-center text-sm text-gray-400">
+							<li class="flex items-center text-sm text-gray-600">
 								<svg
 									class="h-4 w-4 mr-2 text-blue-400"
 									fill="none"
@@ -267,14 +228,45 @@ import Layout from "../layouts/Layout.astro";
 										stroke-width="2"
 										d="M5 13l4 4L19 7"></path>
 								</svg>
-								Optimización SEO
+								Optimización SEO avanzada para mejor posicionamiento
+							</li>
+							<li class="flex items-center text-sm text-gray-600">
+								<svg
+									class="h-4 w-4 mr-2 text-blue-400"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M5 13l4 4L19 7"></path>
+								</svg>
+								Integración con herramientas de analítica web
+							</li>
+							<li class="flex items-center text-sm text-gray-600">
+								<svg
+									class="h-4 w-4 mr-2 text-blue-400"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M5 13l4 4L19 7"></path>
+								</svg>
+								Diseño personalizado según tu marca
 							</li>
 						</ul>
 					</div>
 				</div>
 
+				<!-- Servicio 2: Desarrollo de Software -->
 				<div
-					class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
+					class="bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
 				>
 					<div class="h-2 bg-green-500"></div>
 					<div class="p-8">
@@ -292,19 +284,20 @@ import Layout from "../layouts/Layout.astro";
 									stroke-linecap="round"
 									stroke-linejoin="round"
 									stroke-width="2"
-									d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+									d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
 								></path>
 							</svg>
 						</div>
-						<h3 class="text-2xl font-semibold mb-3">
-							Seguridad Digital
+						<h3 class="text-2xl font-semibold mb-3 text-gray-900">
+							Desarrollo de Software
 						</h3>
-						<p class="text-gray-400">
-							Protegemos tu empresa con soluciones de
-							ciberseguridad avanzadas contra amenazas modernas.
+						<p class="text-gray-700">
+							Creamos soluciones de software a medida que
+							automatizan procesos y optimizan la gestión de tu
+							empresa, adaptadas a tus necesidades específicas.
 						</p>
 						<ul class="mt-4 space-y-2">
-							<li class="flex items-center text-sm text-gray-400">
+							<li class="flex items-center text-sm text-gray-600">
 								<svg
 									class="h-4 w-4 mr-2 text-green-400"
 									fill="none"
@@ -317,9 +310,9 @@ import Layout from "../layouts/Layout.astro";
 										stroke-width="2"
 										d="M5 13l4 4L19 7"></path>
 								</svg>
-								Evaluación de vulnerabilidades
+								Sistemas de gestión de inventario personalizados
 							</li>
-							<li class="flex items-center text-sm text-gray-400">
+							<li class="flex items-center text-sm text-gray-600">
 								<svg
 									class="h-4 w-4 mr-2 text-green-400"
 									fill="none"
@@ -332,9 +325,9 @@ import Layout from "../layouts/Layout.astro";
 										stroke-width="2"
 										d="M5 13l4 4L19 7"></path>
 								</svg>
-								Cifrado de datos
+								Herramientas de CRM para seguimiento de clientes
 							</li>
-							<li class="flex items-center text-sm text-gray-400">
+							<li class="flex items-center text-sm text-gray-600">
 								<svg
 									class="h-4 w-4 mr-2 text-green-400"
 									fill="none"
@@ -347,14 +340,45 @@ import Layout from "../layouts/Layout.astro";
 										stroke-width="2"
 										d="M5 13l4 4L19 7"></path>
 								</svg>
-								Monitoreo continuo
+								Automatización de tareas repetitivas
+							</li>
+							<li class="flex items-center text-sm text-gray-600">
+								<svg
+									class="h-4 w-4 mr-2 text-green-400"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M5 13l4 4L19 7"></path>
+								</svg>
+								Integración con plataformas existentes
+							</li>
+							<li class="flex items-center text-sm text-gray-600">
+								<svg
+									class="h-4 w-4 mr-2 text-green-400"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M5 13l4 4L19 7"></path>
+								</svg>
+								Soporte continuo y actualizaciones
 							</li>
 						</ul>
 					</div>
 				</div>
 
+				<!-- Servicio 3: Soporte Técnico -->
 				<div
-					class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
+					class="bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
 				>
 					<div class="h-2 bg-purple-500"></div>
 					<div class="p-8">
@@ -372,19 +396,20 @@ import Layout from "../layouts/Layout.astro";
 									stroke-linecap="round"
 									stroke-linejoin="round"
 									stroke-width="2"
-									d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+									d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
 								></path>
 							</svg>
 						</div>
-						<h3 class="text-2xl font-semibold mb-3">
-							Inteligencia Artificial
+						<h3 class="text-2xl font-semibold mb-3 text-gray-900">
+							Soporte Técnico
 						</h3>
-						<p class="text-gray-400">
-							Automatizamos procesos y mejoramos la toma de
-							decisiones con soluciones de IA personalizadas.
+						<p class="text-gray-700">
+							Brindamos asistencia rápida y confiable para
+							mantener tus sistemas operativos y resolver
+							cualquier problema técnico con eficiencia.
 						</p>
 						<ul class="mt-4 space-y-2">
-							<li class="flex items-center text-sm text-gray-400">
+							<li class="flex items-center text-sm text-gray-600">
 								<svg
 									class="h-4 w-4 mr-2 text-purple-400"
 									fill="none"
@@ -397,9 +422,9 @@ import Layout from "../layouts/Layout.astro";
 										stroke-width="2"
 										d="M5 13l4 4L19 7"></path>
 								</svg>
-								Análisis predictivo
+								Soporte técnico 24/7 por múltiples canales
 							</li>
-							<li class="flex items-center text-sm text-gray-400">
+							<li class="flex items-center text-sm text-gray-600">
 								<svg
 									class="h-4 w-4 mr-2 text-purple-400"
 									fill="none"
@@ -412,9 +437,9 @@ import Layout from "../layouts/Layout.astro";
 										stroke-width="2"
 										d="M5 13l4 4L19 7"></path>
 								</svg>
-								Chatbots inteligentes
+								Mantenimiento preventivo de sitios y software
 							</li>
-							<li class="flex items-center text-sm text-gray-400">
+							<li class="flex items-center text-sm text-gray-600">
 								<svg
 									class="h-4 w-4 mr-2 text-purple-400"
 									fill="none"
@@ -427,7 +452,37 @@ import Layout from "../layouts/Layout.astro";
 										stroke-width="2"
 										d="M5 13l4 4L19 7"></path>
 								</svg>
-								Sistemas de recomendación
+								Resolución rápida de fallos técnicos
+							</li>
+							<li class="flex items-center text-sm text-gray-600">
+								<svg
+									class="h-4 w-4 mr-2 text-purple-400"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M5 13l4 4L19 7"></path>
+								</svg>
+								Asesoría para optimizar tus herramientas
+							</li>
+							<li class="flex items-center text-sm text-gray-600">
+								<svg
+									class="h-4 w-4 mr-2 text-purple-400"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M5 13l4 4L19 7"></path>
+								</svg>
+								Actualizaciones regulares incluidas
 							</li>
 						</ul>
 					</div>
@@ -445,41 +500,290 @@ import Layout from "../layouts/Layout.astro";
 		</div>
 	</section>
 
-	<!-- Nueva Sección: Sobre Nosotros (Fondo blanco) -->
-	<section class="w-full bg-white py-20 relative overflow-hidden">
+	<!-- Sección de Proyectos: -->
+	<section
+		class="w-full bg-neutral-950 text-white py-12 sm:py-16 md:py-20 lg:py-24 relative overflow-hidden"
+	>
+		<!-- Fondo dinámico de la sección -->
 		<div
-			class="absolute right-0 top-0 h-full w-1/2 bg-gray-50 clip-diagonal hidden lg:block"
+			class="absolute inset-0 bg-gradient-to-tr from-teal-900 via-blue-950 to-violet-900 opacity-95 animate-gradient"
 		>
+			<!-- Líneas y formas geométricas sutiles -->
+			<div
+				class="absolute inset-0 bg-[linear-gradient(45deg,rgba(45,212,191,0.1)_1px,transparent_1px,transparent_10px),linear-gradient(-45deg,rgba(139,92,246,0.1)_1px,transparent_1px,transparent_10px)] bg-[size:20px_20px] animate-gradient-lines"
+			>
+			</div>
+			<div
+				class="absolute w-40 h-40 sm:w-56 sm:h-56 md:w-72 md:h-72 lg:w-96 lg:h-96 bg-teal-500/20 rounded-full blur-3xl top-1/4 left-1/4 animate-pulse-slow"
+			>
+			</div>
+			<div
+				class="absolute w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 bg-violet-500/20 rounded-full blur-3xl bottom-1/3 right-1/3 animate-pulse-slow"
+			>
+			</div>
 		</div>
 
+		<!-- Contenedor principal -->
 		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-			<div class="flex flex-col lg:flex-row items-center gap-12">
-				<div class="lg:w-1/2 animate-fade-in-left">
-					<div class="relative">
-						<div
-							class="absolute -left-6 -top-6 w-20 h-20 bg-emerald-500 rounded-full opacity-20"
+			<div class="text-center mb-8 sm:mb-12">
+				<div
+					class="inline-flex items-center justify-center p-2 bg-teal-500/30 rounded-full mb-4 transition-transform duration-300 hover:scale-105"
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="h-6 w-6 sm:h-8 sm:w-8 text-teal-300"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke="currentColor"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
+						></path>
+					</svg>
+				</div>
+				<h2
+					class="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white animate-fade-in-down"
+				>
+					Proyectos Destacados
+				</h2>
+				<p
+					class="mt-4 text-sm sm:text-base md:text-lg text-teal-100 max-w-2xl mx-auto transition-opacity duration-500 hover:opacity-90"
+				>
+					Descubre cómo hemos transformado negocios con soluciones
+					tecnológicas innovadoras y personalizadas.
+				</p>
+			</div>
+
+			<!-- Tarjetas de proyectos -->
+			<div
+				class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6"
+			>
+				<!-- Proyecto 1 -->
+				<div
+					class="bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-teal-500/20"
+				>
+					<img
+						src="/images/ecommerce.png"
+						alt="Plataforma E-Commerce"
+						class="w-full h-40 sm:h-48 object-cover"
+						onerror="this.onerror=null; this.src='/api/placeholder/400/300'; this.alt='Plataforma E-Commerce'"
+					/>
+					<div class="p-5">
+						<h3
+							class="text-xl sm:text-2xl font-semibold mb-2 text-white"
 						>
-						</div>
-						<div
-							class="absolute -right-6 -bottom-6 w-20 h-20 bg-blue-500 rounded-full opacity-20"
+							Plataforma E-Commerce
+						</h3>
+						<ul
+							class="mt-3 space-y-1 text-gray-300 text-xs sm:text-sm"
 						>
-						</div>
-						<img
-							src="/images/hero-illustration.png"
-							alt="Nuestro equipo"
-							class="w-full h-auto rounded-lg shadow-xl"
-							onerror="this.onerror=null; this.src='/api/placeholder/600/400'; this.alt='Imagen del equipo'"
-						/>
+							<li class="flex items-center">
+								<svg
+									class="h-4 w-4 mr-2 text-teal-400"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M5 13l4 4L19 7"></path>
+								</svg>
+								Diseño responsive
+							</li>
+							<li class="flex items-center">
+								<svg
+									class="h-4 w-4 mr-2 text-teal-400"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M5 13l4 4L19 7"></path>
+								</svg>
+								Pasarela de pago segura
+							</li>
+						</ul>
 					</div>
 				</div>
 
-				<div class="lg:w-1/2 animate-fade-in-right">
+				<!-- Proyecto 2 -->
+				<div
+					class="bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-blue-500/20"
+				>
+					<img
+						src="/images/sistema-de-gestion.png"
+						alt="Sistema de Gestión"
+						class="w-full h-40 sm:h-48 object-cover"
+						onerror="this.onerror=null; this.src='/api/placeholder/400/300'; this.alt='Sistema de Gestión'"
+					/>
+					<div class="p-5">
+						<h3
+							class="text-xl sm:text-2xl font-semibold mb-2 text-white"
+						>
+							Sistema de Gestión
+						</h3>
+						<ul
+							class="mt-3 space-y-1 text-gray-300 text-xs sm:text-sm"
+						>
+							<li class="flex items-center">
+								<svg
+									class="h-4 w-4 mr-2 text-blue-400"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M5 13l4 4L19 7"></path>
+								</svg>
+								Automatización de tareas
+							</li>
+							<li class="flex items-center">
+								<svg
+									class="h-4 w-4 mr-2 text-blue-400"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M5 13l4 4L19 7"></path>
+								</svg>
+								Interfaz intuitiva
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Proyecto 3 -->
+				<div
+					class="bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-violet-500/20"
+				>
+					<img
+						src="/images/compañia-digital.png"
+						alt="Campaña Digital"
+						class="w-full h-40 sm:h-48 object-cover"
+						onerror="this.onerror=null; this.src='/api/placeholder/400/300'; this.alt='Campaña Digital'"
+					/>
+					<div class="p-5">
+						<h3
+							class="text-xl sm:text-2xl font-semibold mb-2 text-white"
+						>
+							Campaña Digital
+						</h3>
+						<ul
+							class="mt-3 space-y-1 text-gray-300 text-xs sm:text-sm"
+						>
+							<li class="flex items-center">
+								<svg
+									class="h-4 w-4 mr-2 text-violet-400"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M5 13l4 4L19 7"></path>
+								</svg>
+								SEO local efectivo
+							</li>
+							<li class="flex items-center">
+								<svg
+									class="h-4 w-4 mr-2 text-violet-400"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M5 13l4 4L19 7"></path>
+								</svg>
+								Publicidad en redes sociales
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="text-center mt-8 sm:mt-10">
+				<!--	<a
+					href="#"
+					class="inline-block bg-teal-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg hover:bg-teal-700 transition-all duration-300 shadow-lg hover:shadow-teal-500/50 transform hover:scale-105 text-sm sm:text-base"
+				>
+					Ver Más Proyectos
+				</a> -->
+			</div>
+		</div>
+	</section>
+
+	<!-- Sección Beneficios de Trabajar con nostros: Precios Accesibles -->
+	<section
+		class="w-full bg-white text-gray-900 pt-8 sm:pt-10 md:pt-12 lg:pt-16 pb-16 sm:pb-20 md:pb-24 lg:pb-28 relative overflow-hidden"
+	>
+		<!-- Contenedor principal -->
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+			<div class="text-center mb-6 sm:mb-8">
+				<div
+					class="inline-flex items-center justify-center p-2 bg-teal-100 rounded-full mb-3 transition-transform duration-300 hover:scale-105"
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="h-6 w-6 sm:h-8 sm:w-8 text-teal-600"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke="currentColor"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+						></path>
+					</svg>
+				</div>
+				<h2
+					class="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-gray-900 animate-fade-in-down"
+				>
+					Beneficios de Trabajar con Nosotros
+				</h2>
+				<p
+					class="mt-2 text-sm sm:text-base md:text-lg text-gray-600 max-w-2xl mx-auto transition-opacity duration-300 hover:opacity-90"
+				>
+					Comprometidos con el éxito de tu negocio a través de
+					tecnología innovadora y un enfoque personalizado.
+				</p>
+			</div>
+
+			<!-- Lista de beneficios en columnas continuas -->
+			<div
+				class="flex flex-col sm:flex-row flex-wrap justify-center items-start gap-6 sm:gap-8 md:gap-10"
+			>
+				<!-- Beneficio 1: Innovación Constante -->
+				<div
+					class="flex flex-col items-center text-center w-full sm:w-auto transition-transform duration-300 hover:-translate-y-1"
+				>
 					<div
-						class="inline-flex items-center justify-center p-2 bg-emerald-100 rounded-lg mb-4"
+						class="flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-teal-500/10 mb-4 transition-transform duration-300 hover:scale-110"
 					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
-							class="h-8 w-8 text-emerald-600"
+							class="h-6 w-6 sm:h-8 sm:w-8 text-teal-600"
 							fill="none"
 							viewBox="0 0 24 24"
 							stroke="currentColor"
@@ -488,266 +792,471 @@ import Layout from "../layouts/Layout.astro";
 								stroke-linecap="round"
 								stroke-linejoin="round"
 								stroke-width="2"
-								d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+								d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+						</svg>
+					</div>
+					<h3
+						class="text-lg sm:text-xl font-semibold text-gray-900 mb-2"
+					>
+						Innovación Constante
+					</h3>
+					<p class="text-sm text-gray-600 max-w-xs">
+						Implementamos las últimas tecnologías para mantener tu
+						negocio competitivo y actualizado.
+					</p>
+				</div>
+
+				<!-- Beneficio 2: Enfoque Personalizado -->
+				<div
+					class="flex flex-col items-center text-center w-full sm:w-auto transition-transform duration-300 hover:-translate-y-1"
+				>
+					<div
+						class="flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-blue-500/10 mb-4 transition-transform duration-300 hover:scale-110"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="h-6 w-6 sm:h-8 sm:w-8 text-blue-600"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
 							></path>
 						</svg>
 					</div>
-
-					<h2 class="text-4xl font-bold text-gray-900 mb-6">
-						¿Quiénes Somos?
-					</h2>
-
-					<p class="text-lg text-gray-600 mb-6">
-						Somos un equipo de profesionales apasionados por la
-						tecnología con más de 10 años de experiencia
-						desarrollando soluciones digitales innovadoras para
-						empresas de todos los tamaños.
+					<h3
+						class="text-lg sm:text-xl font-semibold text-gray-900 mb-2"
+					>
+						Enfoque Personalizado
+					</h3>
+					<p class="text-sm text-gray-600 max-w-xs">
+						Cada solución se adapta a tus objetivos y necesidades
+						específicas para un impacto real.
 					</p>
-
-					<p class="text-lg text-gray-600 mb-6">
-						Nuestra misión es transformar ideas en soluciones
-						digitales que impulsen el crecimiento de tu negocio,
-						combinando creatividad, tecnología y estrategia.
-					</p>
-
-					<div class="grid grid-cols-2 gap-4 mt-8">
-						<div class="flex items-center space-x-2">
-							<div
-								class="flex-shrink-0 w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center"
-							>
-								<span class="text-blue-600 text-xl font-bold"
-									>10+</span
-								>
-							</div>
-							<div>
-								<p class="text-sm text-gray-500">
-									Años de experiencia
-								</p>
-							</div>
-						</div>
-
-						<div class="flex items-center space-x-2">
-							<div
-								class="flex-shrink-0 w-12 h-12 rounded-full bg-green-100 flex items-center justify-center"
-							>
-								<span class="text-green-600 text-xl font-bold"
-									>50+</span
-								>
-							</div>
-							<div>
-								<p class="text-sm text-gray-500">
-									Proyectos completados
-								</p>
-							</div>
-						</div>
-
-						<div class="flex items-center space-x-2">
-							<div
-								class="flex-shrink-0 w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center"
-							>
-								<span class="text-purple-600 text-xl font-bold"
-									>20+</span
-								>
-							</div>
-							<div>
-								<p class="text-sm text-gray-500">
-									Profesionales
-								</p>
-							</div>
-						</div>
-
-						<div class="flex items-center space-x-2">
-							<div
-								class="flex-shrink-0 w-12 h-12 rounded-full bg-yellow-100 flex items-center justify-center"
-							>
-								<span class="text-yellow-600 text-xl font-bold"
-									>98%</span
-								>
-							</div>
-							<div>
-								<p class="text-sm text-gray-500">
-									Clientes satisfechos
-								</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="mt-8">
-						<a
-							href="/nosotros"
-							class="inline-flex items-center text-emerald-600 font-semibold hover:text-emerald-700 transition-colors"
-						>
-							Conoce más sobre nosotros
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								class="h-5 w-5 ml-2"
-								viewBox="0 0 20 20"
-								fill="currentColor"
-							>
-								<path
-									fill-rule="evenodd"
-									d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-									clip-rule="evenodd"></path>
-							</svg>
-						</a>
-					</div>
 				</div>
+
+				<!-- Beneficio 3: Soporte Dedicado -->
+				<div
+					class="flex flex-col items-center text-center w-full sm:w-auto transition-transform duration-300 hover:-translate-y-1"
+				>
+					<div
+						class="flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-violet-500/10 mb-4 transition-transform duration-300 hover:scale-110"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="h-6 w-6 sm:h-8 sm:w-8 text-violet-600"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
+							></path>
+						</svg>
+					</div>
+					<h3
+						class="text-lg sm:text-xl font-semibold text-gray-900 mb-2"
+					>
+						Soporte Dedicado
+					</h3>
+					<p class="text-sm text-gray-600 max-w-xs">
+						Estamos contigo en cada paso, ofreciendo asistencia
+						rápida y confiable siempre que lo necesites.
+					</p>
+				</div>
+
+				<!-- Beneficio 4: Resultados Rápidos -->
+				<div
+					class="flex flex-col items-center text-center w-full sm:w-auto transition-transform duration-300 hover:-translate-y-1"
+				>
+					<div
+						class="flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-orange-500/10 mb-4 transition-transform duration-300 hover:scale-110"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="h-6 w-6 sm:h-8 sm:w-8 text-orange-600"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+						</svg>
+					</div>
+					<h3
+						class="text-lg sm:text-xl font-semibold text-gray-900 mb-2"
+					>
+						Resultados Rápidos
+					</h3>
+					<p class="text-sm text-gray-600 max-w-xs">
+						Entregamos soluciones eficientes que generan beneficios
+						tangibles en poco tiempo.
+					</p>
+				</div>
+
+				<!-- Beneficio 5: Precios Accesibles -->
+				<div
+					class="flex flex-col items-center text-center w-full sm:w-auto transition-transform duration-300 hover:-translate-y-1"
+				>
+					<div
+						class="flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-green-500/10 mb-4 transition-transform duration-300 hover:scale-110"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="h-6 w-6 sm:h-8 sm:w-8 text-green-600"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+							></path>
+						</svg>
+					</div>
+					<h3
+						class="text-lg sm:text-xl font-semibold text-gray-900 mb-2"
+					>
+						Precios Accesibles
+					</h3>
+					<p class="text-sm text-gray-600 max-w-xs">
+						Ofrecemos soluciones de alta calidad a costos que se
+						ajustan a tu presupuesto.
+					</p>
+				</div>
+			</div>
+
+			<div class="text-center mt-8 sm:mt-10">
+				<a
+					href="/contacto"
+					class="inline-block bg-teal-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg hover:bg-teal-700 transition-all duration-300 shadow-lg hover:shadow-teal-500/50 hover:-translate-y-1 text-sm sm:text-base"
+				>
+					Empieza Hoy con Nosotros
+				</a>
 			</div>
 		</div>
 	</section>
 
+	<!-- Sección de Testimonios con fondo de Hero Section -->
 	<section
-		class="w-full bg-emerald-50 text-gray-900 py-12 md:py-16 lg:py-20 relative overflow-hidden"
+		class="w-full bg-neutral-950 text-white py-12 sm:py-16 md:py-20 lg:py-24 relative overflow-hidden"
 	>
+		<!-- Fondo dinámico con gradiente animado y formas geométricas -->
 		<div
-			class="absolute inset-0 bg-gradient-to-tl from-blue-50 via-emerald-50 to-white opacity-50"
+			class="absolute inset-0 bg-gradient-to-tr from-teal-900 via-blue-950 to-violet-900 opacity-95 animate-gradient"
 		>
+			<!-- Líneas y formas geométricas sutiles -->
+			<div
+				class="absolute inset-0 bg-[linear-gradient(45deg,rgba(45,212,191,0.1)_1px,transparent_1px,transparent_10px),linear-gradient(-45deg,rgba(139,92,246,0.1)_1px,transparent_1px,transparent_10px)] bg-[size:20px_20px] animate-gradient-lines"
+			>
+			</div>
+			<div
+				class="absolute w-40 h-40 sm:w-56 sm:h-56 md:w-72 md:h-72 lg:w-96 lg:h-96 bg-teal-500/20 rounded-full blur-3xl top-1/4 left-1/4 animate-pulse-slow"
+			>
+			</div>
+			<div
+				class="absolute w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 bg-violet-500/20 rounded-full blur-3xl bottom-1/3 right-1/3 animate-pulse-slow"
+			>
+			</div>
 		</div>
 
+		<!-- Contenedor principal -->
 		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-			<h2
-				class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center text-gray-900 mb-12 tracking-wide animate-fade-in"
-			>
-				Proyectos Destacados
-			</h2>
-
-			<div class="relative w-full overflow-hidden">
-				<!-- Carrusel o contenedor de tarjetas -->
+			<div class="text-center mb-8 sm:mb-12">
 				<div
-					class="flex flex-col md:flex-row md:space-x-6 space-y-6 md:space-y-0 snap-x snap-mandatory overflow-x-auto scrollbar-hide"
+					class="inline-flex items-center justify-center p-2 bg-teal-500/30 rounded-full mb-4 transition-transform duration-300 hover:scale-105"
 				>
-					<!-- Proyecto 1 -->
-					<div
-						class="min-w-[300px] md:min-w-[350px] bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 snap-center"
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="h-6 w-6 sm:h-8 sm:w-8 text-teal-300"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke="currentColor"
 					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l4-4h-.586A1.994 1.994 0 019 14.586"
+						></path>
+					</svg>
+				</div>
+				<h2
+					class="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white animate-fade-in-down"
+				>
+					Lo Que Dicen Nuestros Clientes
+				</h2>
+				<p
+					class="mt-4 text-sm sm:text-base md:text-lg text-teal-100 max-w-2xl mx-auto transition-opacity duration-500 hover:opacity-90"
+				>
+					Escucha las historias de quienes han confiado en nosotros
+					para transformar sus negocios.
+				</p>
+			</div>
+
+			<!-- Tarjetas de testimonios -->
+			<div
+				class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6"
+			>
+				<!-- Testimonio 1 -->
+				<div
+					class="bg-gray-800/50 rounded-xl shadow-lg p-5 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-teal-500/20"
+				>
+					<div class="flex items-center mb-3">
 						<img
-							src="/images/hero-illustration.png"
-							alt="Proyecto 1"
-							class="w-full h-48 object-cover rounded-lg mb-4"
-							onerror="this.onerror=null; this.src='/api/placeholder/400/300'; this.alt='Imagen predeterminada de proyecto'"
+							src="/images/ana.png"
+							alt="Cliente 1"
+							class="w-12 h-12 sm:w-14 sm:h-14 rounded-full object-cover mr-3"
+							onerror="this.onerror=null; this.src='/api/placeholder/100/100'; this.alt='Foto de Cliente'"
 						/>
-						<h3 class="text-xl font-bold text-gray-900 mb-2">
-							Plataforma de E-Commerce
-						</h3>
-						<p class="text-gray-600 text-base">
-							Desarrollamos una solución personalizada que
-							incrementó las ventas en un 50% para una marca
-							líder.
-						</p>
-						<div class="mt-4 flex items-center text-emerald-500">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								class="h-5 w-5 mr-1"
-								fill="none"
-								viewBox="0 0 24 24"
-								stroke="currentColor"
+						<div>
+							<h3
+								class="text-lg sm:text-xl font-semibold text-white"
 							>
-								<path
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									stroke-width="2"
-									d="M5 13l4 4L19 7"></path>
-							</svg>
-							<span class="text-sm">Completado en 2024</span>
+								Ana Rodríguez
+							</h3>
+							<p class="text-xs sm:text-sm text-gray-400">
+								Emprendedora
+							</p>
 						</div>
 					</div>
+					<p class="text-sm sm:text-base text-teal-200">
+						“Gracias a su solución de e-commerce, mis ventas se
+						dispararon. ¡Todo a un precio que pude pagar!”
+					</p>
+					<div class="mt-3 flex items-center">
+						<span class="text-yellow-400 text-sm">★★★★★</span>
+					</div>
+				</div>
 
-					<!-- Proyecto 2 -->
-					<div
-						class="min-w-[300px] md:min-w-[350px] bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 snap-center"
-					>
+				<!-- Testimonio 2 -->
+				<div
+					class="bg-gray-800/50 rounded-xl shadow-lg p-5 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-blue-500/20"
+				>
+					<div class="flex items-center mb-3">
 						<img
-							src="/images/hero-illustration.png"
-							alt="Proyecto 2"
-							class="w-full h-48 object-cover rounded-lg mb-4"
-							onerror="this.onerror=null; this.src='/api/placeholder/400/300'; this.alt='Imagen predeterminada de proyecto'"
+							src="/images/pedro.png"
+							alt="Cliente 2"
+							class="w-12 h-12 sm:w-14 sm:h-14 rounded-full object-cover mr-3"
+							onerror="this.onerror=null; this.src='/api/placeholder/100/100'; this.alt='Foto de Cliente'"
 						/>
-						<h3 class="text-xl font-bold text-gray-900 mb-2">
-							Sistema de Gestión Empresarial
-						</h3>
-						<p class="text-gray-600 text-base">
-							Optimizamos los procesos internos de una empresa con
-							un software seguro y eficiente.
-						</p>
-						<div class="mt-4 flex items-center text-emerald-500">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								class="h-5 w-5 mr-1"
-								fill="none"
-								viewBox="0 0 24 24"
-								stroke="currentColor"
+						<div>
+							<h3
+								class="text-lg sm:text-xl font-semibold text-white"
 							>
-								<path
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									stroke-width="2"
-									d="M5 13l4 4L19 7"></path>
-							</svg>
-							<span class="text-sm">Completado en 2023</span>
+								Carlos Méndez
+							</h3>
+							<p class="text-xs sm:text-sm text-gray-400">
+								Gerente de Pyme
+							</p>
 						</div>
 					</div>
+					<p class="text-sm sm:text-base text-teal-200">
+						“El sistema de gestión que diseñaron nos ahorró tiempo y
+						dinero. Su soporte es increíble.”
+					</p>
+					<div class="mt-3 flex items-center">
+						<span class="text-yellow-400 text-sm">★★★★★</span>
+					</div>
+				</div>
 
-					<!-- Proyecto 3 -->
-					<div
-						class="min-w-[300px] md:min-w-[350px] bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 snap-center"
-					>
+				<!-- Testimonio 3 -->
+				<div
+					class="bg-gray-800/50 rounded-xl shadow-lg p-5 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-violet-500/20"
+				>
+					<div class="flex items-center mb-3">
 						<img
-							src="/images/hero-illustration.png"
-							alt="Proyecto 3"
-							class="w-full h-48 object-cover rounded-lg mb-4"
-							onerror="this.onerror=null; this.src='/api/placeholder/400/300'; this.alt='Imagen predeterminada de proyecto'"
+							src="/images/rocio.png"
+							alt="Cliente 3"
+							class="w-12 h-12 sm:w-14 sm:h-14 rounded-full object-cover mr-3"
+							onerror="this.onerror=null; this.src='/api/placeholder/100/100'; this.alt='Foto de Cliente'"
 						/>
-						<h3 class="text-xl font-bold text-gray-900 mb-2">
-							Aplicación de Salud Digital
-						</h3>
-						<p class="text-gray-600 text-base">
-							Creamos una app innovadora que mejoró la experiencia
-							del usuario en el sector salud.
-						</p>
-						<div class="mt-4 flex items-center text-emerald-500">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								class="h-5 w-5 mr-1"
-								fill="none"
-								viewBox="0 0 24 24"
-								stroke="currentColor"
+						<div>
+							<h3
+								class="text-lg sm:text-xl font-semibold text-white"
 							>
-								<path
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									stroke-width="2"
-									d="M5 13l4 4L19 7"></path>
-							</svg>
-							<span class="text-sm">Completado en 2025</span>
+								Laura Gómez
+							</h3>
+							<p class="text-xs sm:text-sm text-gray-400">
+								Dueña de Startup
+							</p>
 						</div>
+					</div>
+					<p class="text-sm sm:text-base text-teal-200">
+						“La campaña digital superó mis expectativas. Resultados
+						rápidos y un equipo muy profesional.”
+					</p>
+					<div class="mt-3 flex items-center">
+						<span class="text-yellow-400 text-sm">★★★★★</span>
 					</div>
 				</div>
 			</div>
 
-			<div class="mt-12 text-center">
+			<div class="text-center mt-8 sm:mt-10"></div>
+		</div>
+	</section>
+
+	<!-- Sección preguntas frecuentes -->
+	<section class="w-full py-12 bg-white">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<!-- Título -->
+			<h2
+				class="text-2xl sm:text-3xl md:text-4xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-teal-600 to-violet-600 mb-8 sm:mb-12"
+			>
+				Preguntas Frecuentes
+			</h2>
+
+			<!-- Acordeón -->
+			<div class="space-y-4 max-w-3xl mx-auto">
+				<!-- Pregunta 1 -->
+				<div class="accordion-item">
+					<input type="checkbox" id="faq1" class="hidden peer" />
+					<label
+						for="faq1"
+						class="block p-4 sm:p-5 bg-white border border-gray-200 rounded-xl cursor-pointer transition-all duration-300 hover:border-teal-400 peer-checked:rounded-b-none peer-checked:border-b-0"
+					>
+						<h3
+							class="text-lg sm:text-xl font-semibold text-teal-900 flex justify-between items-center"
+						>
+							¿Cuánto tiempo toma desarrollar un sitio web?
+							<span
+								class="text-teal-600 transition-transform duration-300 peer-checked:rotate-180"
+								>↓</span
+							>
+						</h3>
+					</label>
+					<div
+						class="max-h-0 overflow-hidden bg-white border border-gray-200 border-t-0 rounded-b-xl transition-all duration-300 peer-checked:max-h-40"
+					>
+						<p
+							class="p-4 sm:p-5 text-sm sm:text-base text-gray-700 leading-relaxed"
+						>
+							El tiempo depende de la complejidad del proyecto,
+							pero nuestros sitios web personalizados suelen tomar
+							entre 4 y 8 semanas desde el diseño hasta el
+							lanzamiento.
+						</p>
+					</div>
+				</div>
+
+				<!-- Pregunta 2 -->
+				<div class="accordion-item">
+					<input type="checkbox" id="faq2" class="hidden peer" />
+					<label
+						for="faq2"
+						class="block p-4 sm:p-5 bg-white border border-gray-200 rounded-xl cursor-pointer transition-all duration-300 hover:border-teal-400 peer-checked:rounded-b-none peer-checked:border-b-0"
+					>
+						<h3
+							class="text-lg sm:text-xl font-semibold text-teal-900 flex justify-between items-center"
+						>
+							¿Qué incluye el servicio de desarrollo?
+							<span
+								class="text-teal-600 transition-transform duration-300 peer-checked:rotate-180"
+								>↓</span
+							>
+						</h3>
+					</label>
+					<div
+						class="max-h-0 overflow-hidden bg-white border border-gray-200 border-t-0 rounded-b-xl transition-all duration-300 peer-checked:max-h-40"
+					>
+						<p
+							class="p-4 sm:p-5 text-sm sm:text-base text-gray-700 leading-relaxed"
+						>
+							Incluye diseño a medida, desarrollo frontend y
+							backend, optimización SEO básica y soporte
+							post-lanzamiento por 30 días.
+						</p>
+					</div>
+				</div>
+
+				<!-- Pregunta 3 -->
+				<div class="accordion-item">
+					<input type="checkbox" id="faq3" class="hidden peer" />
+					<label
+						for="faq3"
+						class="block p-4 sm:p-5 bg-white border border-gray-200 rounded-xl cursor-pointer transition-all duration-300 hover:border-teal-400 peer-checked:rounded-b-none peer-checked:border-b-0"
+					>
+						<h3
+							class="text-lg sm:text-xl font-semibold text-teal-900 flex justify-between items-center"
+						>
+							¿Cuánto cuesta un sitio web?
+							<span
+								class="text-teal-600 transition-transform duration-300 peer-checked:rotate-180"
+								>↓</span
+							>
+						</h3>
+					</label>
+					<div
+						class="max-h-0 overflow-hidden bg-white border border-gray-200 border-t-0 rounded-b-xl transition-all duration-300 peer-checked:max-h-40"
+					>
+						<p
+							class="p-4 sm:p-5 text-sm sm:text-base text-gray-700 leading-relaxed"
+						>
+							El costo varía según tus necesidades específicas.
+							¡Contáctanos para una cotización personalizada sin
+							compromiso!
+						</p>
+					</div>
+				</div>
+
+				<!-- Pregunta 4 -->
+				<div class="accordion-item">
+					<input type="checkbox" id="faq4" class="hidden peer" />
+					<label
+						for="faq4"
+						class="block p-4 sm:p-5 bg-white border border-gray-200 rounded-xl cursor-pointer transition-all duration-300 hover:border-teal-400 peer-checked:rounded-b-none peer-checked:border-b-0"
+					>
+						<h3
+							class="text-lg sm:text-xl font-semibold text-teal-900 flex justify-between items-center"
+						>
+							¿Ofrecen mantenimiento después del lanzamiento?
+							<span
+								class="text-teal-600 transition-transform duration-300 peer-checked:rotate-180"
+								>↓</span
+							>
+						</h3>
+					</label>
+					<div
+						class="max-h-0 overflow-hidden bg-white border border-gray-200 border-t-0 rounded-b-xl transition-all duration-300 peer-checked:max-h-40"
+					>
+						<p
+							class="p-4 sm:p-5 text-sm sm:text-base text-gray-700 leading-relaxed"
+						>
+							Sí, ofrecemos planes de mantenimiento mensual para
+							mantener tu sitio actualizado y seguro.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- CTA -->
+			<div class="mt-10 text-center">
+				<p class="text-lg text-gray-700">¿Listo para empezar?</p>
 				<a
-					href="/proyectos"
-					class="bg-emerald-600 text-white px-8 py-4 text-lg rounded-lg hover:bg-emerald-700 transition-all duration-300 shadow-md hover:shadow-xl transform hover:translate-y-1"
+					href="/contacto"
+					class="inline-block mt-4 px-6 py-2 sm:px-8 sm:py-3 bg-gradient-to-r from-teal-600 to-violet-600 text-white text-sm sm:text-base font-semibold rounded-full hover:from-teal-700 hover:to-violet-700 transition-all duration-300 shadow-lg hover:shadow-teal-500/50"
 				>
-					Ver todos los proyectos
+					Cotiza tu web ahora
 				</a>
 			</div>
 		</div>
 	</section>
 
 	<style>
-		/* Animaciones personalizadas */
+		/* Animaciones personalizadas sección hero*/
 		@keyframes fadeInDown {
-			from {
-				opacity: 0;
-				transform: translateY(30px);
-			}
-			to {
-				opacity: 1;
-				transform: translateY(0);
-			}
-		}
-		@keyframes fadeInUp {
 			from {
 				opacity: 0;
 				transform: translateY(-30px);
@@ -757,16 +1266,97 @@ import Layout from "../layouts/Layout.astro";
 				transform: translateY(0);
 			}
 		}
-		@keyframes slideInRight {
+		@keyframes fadeInUp {
 			from {
 				opacity: 0;
-				transform: translateX(50px);
+				transform: translateY(30px);
 			}
 			to {
 				opacity: 1;
-				transform: translateX(0);
+				transform: translateY(0);
 			}
 		}
+		@keyframes pulseSlow {
+			0%,
+			100% {
+				transform: scale(1);
+				opacity: 0.3;
+			}
+			50% {
+				transform: scale(1.05);
+				opacity: 0.5;
+			}
+		}
+		@keyframes gradientShift {
+			0% {
+				background-position: 0% 50%;
+			}
+			50% {
+				background-position: 100% 50%;
+			}
+			100% {
+				background-position: 0% 50%;
+			}
+		}
+		@keyframes gradientLines {
+			0% {
+				background-position: 0 0;
+			}
+			100% {
+				background-position: 20px 20px;
+			}
+		}
+
+		.flex {
+			scrollbar-width: thin;
+			scrollbar-color: rgba(45, 212, 191, 0.5) transparent;
+		}
+		.flex::-webkit-scrollbar {
+			height: 8px;
+		}
+		.flex::-webkit-scrollbar-thumb {
+			background: rgba(45, 212, 191, 0.5);
+			border-radius: 4px;
+		}
+		.flex::-webkit-scrollbar-track {
+			background: transparent;
+		}
+		.animate-fade-in-down {
+			animation: fadeInDown 1s ease-out forwards;
+		}
+		.animate-fade-in-up {
+			animation: fadeInUp 1s ease-out forwards;
+		}
+		.animate-pulse-slow {
+			animation: pulseSlow 4s infinite ease-in-out;
+		}
+		.animate-gradient {
+			background-size: 200% 200%;
+			animation: gradientShift 8s ease infinite;
+		}
+		.animate-gradient-lines {
+			animation: gradientLines 20s linear infinite;
+		}
+
+		/* porque elegirnos*/
+
+		@keyframes fadeInDown {
+			from {
+				opacity: 0;
+				transform: translateY(-20px);
+			}
+			to {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+
+		.animate-fade-in-down {
+			animation: fadeInDown 1s ease-out forwards;
+		}
+
+		/* Animaciones personalizadas */
+
 		@keyframes slideInLeft {
 			from {
 				opacity: 0;

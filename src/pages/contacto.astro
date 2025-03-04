@@ -1,0 +1,226 @@
+---
+// src/pages/contacto.astro
+import Layout from "../layouts/Layout.astro"; // Asumiendo un layout base
+---
+
+<Layout title="Contacto - Softechperu">
+    <!-- Hero Section de Contacto (Fondo oscuro) -->
+    <section
+        class="w-full bg-neutral-950 text-white pt-24 sm:pt-28 md:pt-32 lg:pt-36 pb-16 sm:pb-20 md:pb-24 lg:pb-28 relative overflow-hidden"
+    >
+        <div
+            class="absolute inset-0 bg-gradient-to-tr from-teal-900 via-blue-950 to-violet-900 opacity-95"
+        >
+        </div>
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center"
+        >
+            <h1
+                class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black leading-tight tracking-tight text-white drop-shadow-lg"
+            >
+                ¡Hablemos de tu <span
+                    class="bg-clip-text text-transparent bg-gradient-to-r from-teal-300 to-violet-300"
+                    >Proyecto!</span
+                >
+            </h1>
+            <p
+                class="mt-4 text-sm sm:text-base md:text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed"
+            >
+                En Softechperu queremos conocerte y ayudarte a construir
+                soluciones digitales que marquen la diferencia.
+            </p>
+        </div>
+    </section>
+
+    <!-- Formulario de Contacto Mejorado (Fondo blanco) -->
+    <section class="w-full py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2
+                class="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-neutral-900 mb-8 sm:mb-12"
+            >
+                Contáctanos Ahora
+            </h2>
+            <div
+                class="max-w-2xl mx-auto bg-gradient-to-br from-gray-50 to-white p-6 sm:p-8 rounded-2xl shadow-xl border border-teal-100"
+            >
+                <form action="/api/contacto" method="POST" class="space-y-6">
+                    <!-- Nombre y Apellido -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label
+                                for="firstName"
+                                class="block text-sm font-semibold text-teal-900 mb-2"
+                                >Nombre</label
+                            >
+                            <input
+                                type="text"
+                                id="firstName"
+                                name="firstName"
+                                placeholder="Tu nombre"
+                                required
+                                class="w-full px-4 py-3 bg-white border border-gray-200 rounded-xl text-gray-700 placeholder-gray-400 focus:outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-200 transition-all duration-300"
+                            />
+                        </div>
+                        <div>
+                            <label
+                                for="lastName"
+                                class="block text-sm font-semibold text-teal-900 mb-2"
+                                >Apellido</label
+                            >
+                            <input
+                                type="text"
+                                id="lastName"
+                                name="lastName"
+                                placeholder="Tu apellido"
+                                required
+                                class="w-full px-4 py-3 bg-white border border-gray-200 rounded-xl text-gray-700 placeholder-gray-400 focus:outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-200 transition-all duration-300"
+                            />
+                        </div>
+                    </div>
+
+                    <!-- Correo y Teléfono -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label
+                                for="email"
+                                class="block text-sm font-semibold text-teal-900 mb-2"
+                                >Correo Electrónico</label
+                            >
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="tuemail@ejemplo.com"
+                                required
+                                class="w-full px-4 py-3 bg-white border border-gray-200 rounded-xl text-gray-700 placeholder-gray-400 focus:outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-200 transition-all duration-300"
+                            />
+                        </div>
+                        <div>
+                            <label
+                                for="phone"
+                                class="block text-sm font-semibold text-teal-900 mb-2"
+                                >Teléfono</label
+                            >
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                placeholder="+51 987 654 321"
+                                class="w-full px-4 py-3 bg-white border border-gray-200 rounded-xl text-gray-700 placeholder-gray-400 focus:outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-200 transition-all duration-300"
+                            />
+                        </div>
+                    </div>
+
+                    <!-- Tipo de Proyecto -->
+                    <div>
+                        <label
+                            for="projectType"
+                            class="block text-sm font-semibold text-teal-900 mb-2"
+                            >¿Qué necesitas?</label
+                        >
+                        <select
+                            id="projectType"
+                            name="projectType"
+                            required
+                            class="w-full px-4 py-3 bg-white border border-gray-200 rounded-xl text-gray-700 focus:outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-200 transition-all duration-300"
+                        >
+                            <option value="" disabled selected
+                                >Selecciona una opción</option
+                            >
+                            <option value="web">Desarrollo Web</option>
+                            <option value="app"
+                                >Desarrollo de Aplicaciones</option
+                            >
+                            <option value="consulting"
+                                >Consultoría Tecnológica</option
+                            >
+                            <option value="maintenance"
+                                >Mantenimiento y Soporte</option
+                            >
+                            <option value="uiux">Diseño UI/UX</option>
+                            <option value="seo">Optimización SEO</option>
+                            <option value="other">Otro</option>
+                        </select>
+                    </div>
+
+                    <!-- Presupuesto -->
+                    <div>
+                        <label
+                            for="budget"
+                            class="block text-sm font-semibold text-teal-900 mb-2"
+                            >Presupuesto Estimado</label
+                        >
+                        <select
+                            id="budget"
+                            name="budget"
+                            class="w-full px-4 py-3 bg-white border border-gray-200 rounded-xl text-gray-700 focus:outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-200 transition-all duration-300"
+                        >
+                            <option value="" disabled selected
+                                >Selecciona un rango</option
+                            >
+                            <option value="less-300">Menos de S/300</option>
+                            <option value="300-1000">S/300 - S/1,000</option>
+                            <option value="1000-2000">S/1,000 - S/2,000</option>
+                            <option value="2000-3000">S/2,000 - S/3,000</option>
+                            <option value="more-3000">Más de S/3,000</option>
+                            <option value="not-sure">No estoy seguro</option>
+                        </select>
+                    </div>
+
+                    <!-- Mensaje -->
+                    <div>
+                        <label
+                            for="message"
+                            class="block text-sm font-semibold text-teal-900 mb-2"
+                            >Cuéntanos sobre tu proyecto</label
+                        >
+                        <textarea
+                            id="message"
+                            name="message"
+                            placeholder="Describe tu idea o necesidades"
+                            rows="6"
+                            required
+                            class="w-full px-4 py-3 bg-white border border-gray-200 rounded-xl text-gray-700 placeholder-gray-400 focus:outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-200 transition-all duration-300"
+                        ></textarea>
+                    </div>
+
+                    <!-- Checkbox de consentimiento -->
+                    <div class="flex items-center gap-2">
+                        <input
+                            type="checkbox"
+                            id="consent"
+                            name="consent"
+                            required
+                            class="h-5 w-5 text-teal-600 border-gray-200 rounded focus:ring-teal-200"
+                        />
+                        <label for="consent" class="text-sm text-gray-700">
+                            Acepto que Softechperu me contacte para discutir mi
+                            proyecto.
+                        </label>
+                    </div>
+
+                    <!-- Botón de envío -->
+                    <button
+                        type="submit"
+                        class="w-full px-6 py-3 bg-gradient-to-r from-teal-600 to-violet-600 text-white text-sm sm:text-base font-semibold rounded-full hover:from-teal-700 hover:to-violet-700 transition-all duration-300 shadow-lg hover:shadow-teal-500/50 flex items-center justify-center gap-2"
+                    >
+                        <svg
+                            class="w-5 h-5"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                        </svg>
+                        Enviar Mensaje
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+</Layout>

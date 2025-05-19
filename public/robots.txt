@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://softechperu.com/sitemap.xml

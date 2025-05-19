@@ -35,25 +35,16 @@ export default function Contacto() {
             <Header />
 
             {/* Hero Section */}
-            <section className="relative overflow-hidden min-h-[40vh] flex items-center">
-                {/* Background Effects */}
-                <div className="absolute inset-0 opacity-15">
-                    <div className="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-cyan-500/20 blur-[90px] animate-pulse-slow"></div>
-                    <div className="absolute bottom-1/3 right-1/3 w-72 h-72 rounded-full bg-blue-600/20 blur-[90px] animate-pulse-slow"></div>
-                </div>
-
-                <div className="relative mx-auto max-w-7xl px-5 sm:px-6 lg:px-8 py-16 text-center z-10">
-                    <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
-                        Contáctanos
-                    </h1>
-                    <p className="text-sm sm:text-base text-gray-300 max-w-2xl mx-auto leading-relaxed">
-                        ¿Tienes un proyecto en mente? Completa el formulario y nos pondremos en contacto contigo lo antes posible.
-                    </p>
-                </div>
-            </section>
-
+            <div className="relative mx-auto max-w-7xl px-5 sm:px-6 lg:px-8 py-10 text-center z-10">
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-2">
+                    Contáctanos
+                </h1>
+                <p className="text-sm sm:text-base text-gray-300 max-w-2xl mx-auto leading-relaxed">
+                    ¿Tienes un proyecto en mente? Completa el formulario y nos pondremos en contacto contigo lo antes posible.
+                </p>
+            </div>
             {/* Contact Form Section */}
-            <section className="relative py-16 sm:py-24">
+            <section className="relative py-10 sm:py-10">
                 <div className="absolute inset-0 opacity-10">
                     <div className="absolute top-0 right-0 w-64 h-64 rounded-full bg-purple-500/20 blur-[90px]"></div>
                     <div className="absolute bottom-0 left-0 w-72 h-72 rounded-full bg-blue-600/20 blur-[90px]"></div>

@@ -41,7 +41,7 @@ export default function TechBlogSection() {
             category: "GUÍA PRÁCTICA",
             date: "1 NOV 2023",
             readTime: "9 min",
-            image: "/images/blog/cloud.png",
+            image: "/images/blog/cloud.jpg",
             alt: "Seguridad en computación en la nube"
         }
     ];

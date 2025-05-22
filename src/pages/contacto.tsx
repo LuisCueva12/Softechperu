@@ -1,3 +1,5 @@
+'use client';
+
 import { useState, FormEvent, ChangeEvent } from 'react';
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -17,6 +19,9 @@ export default function Contacto() {
         message: ''
     });
 
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle');
+
     const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
         setFormData(prev => ({
@@ -25,9 +30,35 @@ export default function Contacto() {
         }));
     };
 
-    const handleSubmit = (e: FormEvent) => {
+    // En tu componente de contacto, asegúrate de que el handleSubmit sea así:
+    
+    const handleSubmit = async (e: FormEvent) => {
         e.preventDefault();
-        console.log('Formulario enviado:', formData);
+        setIsSubmitting(true);
+        
+        try {
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData),
+            });
+    
+            const data = await response.json();
+            
+            if (!response.ok) {
+                throw new Error(data.error || 'Error al enviar el mensaje');
+            }
+            
+            // Éxito
+            setFormData({ name: '', email: '', phone: '', message: '' });
+            alert('¡Mensaje enviado con éxito!');
+            
+        } catch (error) {
+            console.error('Error:', error);
+            alert(error instanceof Error ? error.message : 'Error al enviar el mensaje');
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     return (

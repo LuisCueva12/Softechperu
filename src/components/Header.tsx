@@ -18,7 +18,6 @@ export default function ModernHeader() {
 
     const navItems = [
         { name: 'Servicios', path: '/servicios' },
-        { name: 'Soluciones', path: '/soluciones' },
         { name: 'Portafolio', path: '/portafolio' },
         { name: 'Contacto', path: '/contacto'},
         { name: 'Blog', path: '/blog' },

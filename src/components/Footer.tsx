@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import WhatsappButton from './WhatsappButton';
 
 export default function Footer() {
     return (
@@ -23,24 +24,9 @@ export default function Footer() {
                             Soluciones digitales innovadoras para impulsar el éxito de tu negocio en la era digital.
                         </p>
 
-                        {/* Newsletter */}
-                        <div className="mt-6">
-                            <h3 className="text-lg font-medium text-white">Suscríbete a nuestro equipo</h3>
-                            <form className="mt-3 flex">
-                                <input
-                                    type="email"
-                                    placeholder="Tu correo electrónico"
-                                    className="flex-1 rounded-l-lg border border-gray-700 bg-gray-800 px-4 py-2 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-400"
-                                />
-                                <button
-                                    type="submit"
-                                    className="rounded-r-lg bg-gradient-to-r from-cyan-500 to-blue-600 px-4 py-2 font-medium text-white transition hover:from-cyan-600 hover:to-blue-700"
-                                >
-                                    Enviar
-                                </button>
-                            </form>
-                        </div>
                     </div>
+
+                    <WhatsappButton/>
 
                     {/* Enlaces rápidos */}
                     <div>

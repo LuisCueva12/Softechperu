@@ -89,7 +89,7 @@ export default function Footer() {
                             <p>Av. Tecnología 123</p>
                             <p>Lima, Perú</p>
                             <p>
-                                <Link href="tel:+51987654321" className="transition hover:text-cyan-400 hover:underline">
+                                <Link href="tel:+51966963210" className="transition hover:text-cyan-400 hover:underline">
                                     +51 987 654 321
                                 </Link>
                             </p>

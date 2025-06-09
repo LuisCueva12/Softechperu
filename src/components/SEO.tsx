@@ -17,7 +17,7 @@ const SEO: React.FC<SEOProps> = ({ title, description, keywords, image, url }) =
         <Head>
             <title>{title}</title>
             <meta name="description" content={description} />
-            <meta name="keywords" content={keywords || "software, hardware, tecnología, softech"} />
+            <meta name="keywords" content={keywords || "software, hardware, tecnología, softech, desarrollo a medida, software contables, paginas webs, aulas virtuales"} />
             <meta name="author" content="SoftechPeru" />
             <meta name="robots" content="index, follow" />
 
@@ -51,7 +51,7 @@ const SEO: React.FC<SEOProps> = ({ title, description, keywords, image, url }) =
                         "availableLanguage": ["Spanish", "English"]
                     },
                     "sameAs": [
-                        "https://www.facebook.com/softechperu",
+                        "https://web.facebook.com/people/Softechperu/61572860245964/",
                         "https://twitter.com/softechperu",
                         "https://www.linkedin.com/company/softechperu"
                     ]
